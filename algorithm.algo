@@ -1,0 +1,32 @@
+VAR 
+langSent : INTEGER ;
+nWords : INTEGER ;
+nVowels : INTEGER ;
+str : STRING ;
+Vowels : ARRAY [6] ;
+
+BEGIN
+read (str) ;
+Vowels:=["a" ,"e","i","o","u","y"] ;
+langSent:= 0 ;
+nWords:= 0 ;
+nVowels:= 0 ;
+
+
+For i from to (str.length-1) do 
+langSent++ ;
+if (str[i]=" "){
+nWords++ ;
+}
+
+For j from 0 to 5 do 
+if (Vowels[j] = str[i])
+{
+nVowels++ ;
+}
+
+END For
+END For
+
+END         
+
